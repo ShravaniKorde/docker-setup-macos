@@ -1,16 +1,21 @@
 # 🐳 Install a Specific Docker Desktop Version via Homebrew (macOS)
 
+By default, Homebrew installs **only the latest version** of Docker Desktop, and the [Docker website](https://www.docker.com/products/docker-desktop/) also typically provides just the newest release.
 
-Older versions of Docker Desktop are not directly available for installation via Homebrew or the official Docker website. 
-The Docker website only provides version information, without offering direct .dmg or .zip downloads for older releases. Additionally, Homebrew installs only the latest version by default. 
-Therefore, this guide provides a workaround to install specific older versions of Docker by using archived cask files from the Homebrew GitHub repository.
+If you need to install a **specific older version** (like 4.15.0), it's not directly available via `brew install` or the Docker site. 
+However, there's a workaround using **archived Homebrew Cask files from GitHub**, which point to older `.dmg` URLs.
 
+This guide will show you how to:
+
+- Download an older `docker-desktop.rb` cask definition
+- Install Docker Desktop from that archived file
+  
 ## Prerequisites:
-* macOS with Homebrew installed
+* ✅ macOS with Homebrew installed
  (Install Homebrew: https://brew.sh/)
 
 
-* Terminal access
+* ✅ Terminal access with an internet connection
 
 
 ## Steps: 
